@@ -17,6 +17,10 @@
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
 }
 /* shared style end */
 
@@ -60,7 +64,7 @@
 /* hero start */
  #main{
      background-image: url(assets/hero-bg.png);
-     background-size: cover;
+     background-size: contain;
      background-position: center;
  }
  .hero{
@@ -74,8 +78,22 @@
     z-index: 1;
 } */
 .hero-image{
+    margin: 0;
     margin-bottom: 2.5rem;
+    background-image: url(assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px;
 }
+.hero-image img{
+    display: flex;
+    align-items: center;
+}
+.hero-img .hero-btn{
+    position: relative;
+    bottom: 300px;
+}
+
 .hero-text{
     text-align: center;
     color: #FFFFFF;
@@ -108,6 +126,10 @@
     border: none;
     gap: 8px;
     cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.hero-btn1:hover{
+    transform: scale(1.05);
 }
 
 .hero-btn2{
@@ -123,14 +145,17 @@
     border: 1px solid #00FF88;
     color: #00FF88;
     cursor: pointer;
-
+   transition: transform 0.5s ease;
+}
+.hero-btn2:hover{
+    transform: scale(1.05);
 }
 /* hero end */
 
 
 /* about start  */
 .about{
-     width: 87.5%;
+    width: 87.5%;
     max-width: 1400px;
     text-align: center;
     color: #FFFFFF;
@@ -172,6 +197,241 @@
 }
 
 /* about end  */
+
+/* choose section start */
+#choose-section{
+    background-color: #230E3D;
+}
+.choose{
+    width: 87.5%;
+    max-width: 1400px;
+    color: #FFFFFF;
+    padding: 120px 0;
+}
+.choose-text h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.choose-card{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    /* width: 790px;
+    height: 225px; */
+    gap: 30px;
+}
+.c-card1 h3, .c-card2 h3, .c-card3 h3, .c-card4 h3, .c-card5 h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.choose-card .c-card1{
+    grid-row: span 2;
+    background-color: #351165;
+}
+.c-card1 img{
+    margin-top: 70px;
+    margin-bottom: 16px;
+}
+
+.c-card1 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.c-card2 img, .c-card3 img, .c-card4 img, .c-card5 img{
+    margin-bottom: 16px;
+}
+.c-card1, .c-card2, .c-card3, .c-card4, .c-card5{
+    padding: 40px;
+    border-radius: 40px;
+   transition: transform 0.5s ease;
+}
+.c-card1:hover{
+    transform: scale(1.05);
+}
+.c-card2:hover{
+    transform: scale(1.05);
+}
+.c-card3:hover{
+    transform: scale(1.05);
+}
+.c-card4:hover{
+    transform: scale(1.05);
+}
+.c-card5:hover{
+    transform: scale(1.05);
+}
+
+.c-card1 p, .c-card2 p, .c-card3 p, .c-card4 p, .c-card5 p{
+    margin-bottom: 0px;
+}
+.choose-card .c-card2{
+    grid-column: span 2;
+    background-color: #351165;
+}
+.choose-card .c-card3{
+    grid-column: span 2;
+    background-color: #351165;
+}
+.choose-card .c-card4{
+    grid-column: span 2;
+    background-color: #351165;
+}
+.choose-card .c-card5{
+    background-color: #351165;
+}
+/* choose section end */
+
+/* episode start */
+#episode-section{
+    background-color: #1A0B2E;
+}
+.episode{
+    width: 87.5%;
+    max-width: 1400px;
+    color: #FFFFFF;
+    padding: 120px 0;
+
+}
+
+ .episode-text h2, .host h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ .episode-text .episode-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+ }
+ .episode-card .e-card{
+    width: 380px;
+    background-color: #230E3D;
+    border-radius: 25px;
+    margin-bottom: 120px;
+    transition: transform 0.6s ease;
+ }
+ .episode-card .e-card:hover{
+    transform: scale(1.05);
+ }
+ .episode-card iframe{
+    width: 380px;
+    height: 214px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+ }
+ .e-text{
+    padding: 24px;
+ }
+ .e-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+ }
+ .e-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+ }
+.e-text h6{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.e-text h6 img{
+    margin: 0;
+}
+
+.host-id{
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    background-color: #351165;
+    border-radius: 40px;
+}
+.host-text h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.host-text h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.host-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.host-social{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.host-social .host-image{
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
+
+
+/* episode end */
+
+/* footer start */
+
+#footer{
+    background-image: url(assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-div{
+    width: 87.5%;
+    max-width: 1400px;
+    color: #FFFFFF;
+    padding: 120px 0;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-text h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.footer-logo .image{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0 40px;
+}
+.footer-logo .image h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-copy{
+    margin-bottom: 20px;
+}
+/* footer end */
 
 
 
@@ -243,8 +503,61 @@
 /* about end */
 
 
-
-
+/* choose start */
+.choose{
+    padding:0;
+}
+.choose-text h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-top: 40px;
 
 }
+
+.choose-card{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    padding-bottom: 20px;
+    /* width: 400px;
+    height: 287px; */
+}
+
+.c-card1, .c-card2, .c-card3, .c-card4, .c-card5{
+    padding:16px;
+}
+
+.choose-card .c-card1{
+    grid-row: span 1;
+}
+.c-card1 img{
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
+/* choose end */
+
+
+/* episode start */
+.episode{
+   padding: 20px 0;
+}
+.episode-text h2, .host h1{
+    font-size: 32px;
+}
+.episode-text .episode-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0px;
+}
+
+.host-id{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
 /* responsive style end */
