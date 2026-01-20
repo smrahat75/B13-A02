@@ -431,19 +431,16 @@
     display: flex;
     margin: 0;
     gap: 8px;
+    margin-bottom: 30px;
 }
 .footer-logo h5{
     display: flex;
     align-items: center;
     margin: 0;
 }
-
 .footer-logo .image h5{
     font-size: 16px;
     font-weight: 500;
-}
-.footer-copy{
-    margin-bottom: 20px;
 }
 /* footer end */
 
@@ -477,11 +474,9 @@
     /* hero start */
 
     #main{
-     background-image: url(assets/Image.png);
      background-size: cover;
      background-position: center;
-     width:100%;
-     height: auto;
+     background-repeat: no-repeat;
     }
 
     .hero-img{
@@ -607,6 +602,12 @@
     text-align: center;
 }
 
+/* episode end */
+/* footer start */
+
+.footer-div{
+    padding: 20px 0;
+}
 }
 
 /* responsive style end */
