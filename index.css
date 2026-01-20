@@ -27,9 +27,8 @@
 }
 .nav-wave{
      background:-webkit-linear-gradient(75deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 31%, rgba(145, 0, 248, 1) 80%);
-     -webkit-background-clip: text ;
+     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-
 }
 .nav .nav-text{
     display: flex;
@@ -47,7 +46,6 @@
 .btn{
     padding: 12px 16px;
     border-radius: 25px;
-    /* color: #FFFFFF; */
     font-size: 16px;
     font-weight: 600;
     background-image: linear-gradient(14deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
@@ -105,10 +103,18 @@
     border-radius: 35px;
     box-shadow: 0px 0px 27px rgba(0, 255, 136, 0.5);
     cursor: pointer;
-    transition: transform 3s ease;
+    animation: up-down 2s infinite;
 }
-.hero-img .new-btn:hover{
-    transform:scale(1.05)
+@keyframes up-down{
+       0%{
+        transform: scale(1);
+       }
+       50%{
+        transform: scale(1.2);
+       }
+       100%{
+        transform: scale(1);
+       }
 }
 
 .hero-text{
@@ -119,8 +125,20 @@
     font-size: 60px;
     font-weight: 800;
     margin-bottom:8px;
+    background-image: linear-gradient(14deg, rgba(247, 233, 63, 1) 10%, rgb(214, 70, 171) 51%, rgba(145, 0, 248, 1) 100%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:change 5s linear infinite;
 }
-
+@keyframes change{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 200%;
+    }
+}
 .hero-text p{
     font-size: 16px;
     font-weight: 400;
@@ -145,6 +163,7 @@
     cursor: pointer;
     transition: transform 0.5s ease;
 }
+
 .hero-btn1:hover{
     transform: scale(1.05);
 }
