@@ -269,7 +269,7 @@
 .c-card1 p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 26px;
 }
 .c-card2 img, .c-card3 img, .c-card4 img, .c-card5 img{
     margin-bottom: 16px;
@@ -571,7 +571,7 @@
     padding-bottom: 20px;
 }
 .c-card1, .c-card2, .c-card3, .c-card4, .c-card5{
-    padding:16px;
+    padding:26px;
     width: 100%;
 }
 .choose-card .c-card1, .c-card5{
